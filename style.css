@@ -1,0 +1,14 @@
+td:nth-child(2) {
+	text-align: right;
+}
+
+table tr {
+	height: 3rem;
+}
+
+/* .card {
+	flex-direction: row;
+}
+.card img {
+	width: 40%;
+} */
