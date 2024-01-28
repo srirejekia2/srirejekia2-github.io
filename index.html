@@ -1,56 +1,120 @@
 <!DOCTYPE html>
-<html lang="en">
-	<head>
+<html>
+  <head>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<title>Sri Rejeki</title>
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
-		<link rel="stylesheet" href="style.css" />
-	</head>
-	<body>
-		<nav class="navbar navbar-expand-lg fixed-top" data-bs-theme="dark" style="background-color: #b55139">
-			<div class="container">
-				<h2><a class="navbar-brand fs-2 fst-italic fw-bold" href="#">Sri Rejeki</a></h2>
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse" id="navbarNav">
-					<ul class="navbar-nav ms-auto fw-bold">
-						<li class="nav-item">
-							<a class="nav-link" href="#berat">Makanan Berat</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#ringan">Makanan Ringan</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#panas">Minuman Panas</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#dingin">Minuman Dingin</a>
-						</li>
-					</ul>
-				</div>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title of the document</title>
+    <link rel="stylesheet" href="mystyle.css">
+  </head>
+  <body>
+		<!-- Top navigation -->
+		<div class="topnav">
+
+			<!-- Centered link -->
+			<div class="topnav-centered">
+				<a href="#" href="#home">Sri Rejeki</a>
 			</div>
-		</nav>
 
-		<div id="daftar-menu"></div>
+			
 
-		<footer>
-			<div style="height: 300px"></div>
-		</footer>
+		</div>
+		<div>
+			<div class="slideshow-container">
 
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-		<script src="data.js"></script>
-		<script src="menu-1.js"></script>
-		<script>
-			const navLinks = document.querySelectorAll('.nav-item');
-			const menuToggle = document.getElementById('navbarNav');
-			const bsCollapse = new bootstrap.Collapse(menuToggle, { toggle: false });
-			navLinks.forEach((l) => {
-				l.addEventListener('click', () => {
-					bsCollapse.toggle();
-				});
-			});
-		</script>
-	</body>
+				<div class="mySlides fade">
+					<div class="numbertext">1 / 3</div>
+					<img src="./icon/ICON-JPG01.jpg" style="width:100%">
+					<div class="text">Caption Text</div>
+				</div>
+
+				<div class="mySlides fade">
+					<div class="numbertext">2 / 3</div>
+					<img src="./icon/ICON-JPG02.jpg" style="width:100%">
+					<div class="text">Caption Two</div>
+				</div>
+
+				<div class="mySlides fade">
+					<div class="numbertext">3 / 3</div>
+					<img src="./icon/ICON-JPG03.jpg" style="width:100%">
+					<div class="text">Caption Three</div>
+				</div>
+
+				</div>
+				<br>
+
+				<div style="text-align:center">
+					<span class="dot"></span> 
+					<span class="dot"></span> 
+					<span class="dot"></span> 
+				</div>
+		</div>
+		<!-- <div class="clearfix"></div> -->
+		<div class="content">
+			<a href="#" class="button">
+				<img class="imgicon" src="./icon/ICON-PNG01.png"/>
+				<span class="button-text">Menu</span>
+			</a>
+			<!-- <a href="#" class="button"> -->
+				<!-- <img class="imgicon" src="./icon/ICON-PNG05.png"/> -->
+				<!-- <span class="button-text">Promo</span> -->
+			<!-- </a> -->
+			<a href="#" class="button">
+				<img class="imgicon" src="./icon/ICON-PNG06.png"/>
+				<span class="button-text">Lokasi</span>
+			</a>
+			<a href="#" class="button">
+				<img class="imgicon" src="./icon/ICON-PNG08.png"/>
+				<span class="button-text">Kontak</span>
+			</a>
+			<!-- <div class="clearfix"></div> -->
+			<a href="#" class="button">
+				<img class="imgicon" src="./icon/ICON-PNG02.png"/>
+				<span class="button-text">Go Food</span>
+			</a>
+			<a href="#" class="button">
+				<img class="imgicon" src="./icon/ICON-PNG03.png"/>
+				<span class="button-text">Grab Food</span>
+			</a>
+			<a href="#" class="button">
+				<img class="imgicon" src="./icon/ICON-PNG04.png"/>
+				<span class="button-text">Shopee Food</span>
+			</a>
+			<a href="#" class="button">
+				<img class="imgicon" src="./icon/ICON-PNG10.png"/>
+				<span class="button-text">Instagram</span>
+			</a>
+			<a href="#" class="button">
+				<img class="imgicon" src="./icon/ICON-PNG09.png"/>
+				<span class="button-text">TikTok</span>
+			</a>
+			<a href="#" class="button">
+				<img class="imgicon" src="./icon/ICON-PNG07.png"/>
+				<span class="button-text">Facebook</span>
+			</a>
+		</div>
+		
+
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+  </body>
 </html>
