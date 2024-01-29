@@ -43,10 +43,7 @@ body {
 	background-color: #3b582a;
 	text-align: center;
 	padding: 10px;
-	position: fixed;
-	top: 0;
-	width: 100%;
-	z-index:999;
+	
 	/* height: 50px; */
 	/* margin-bottom: 10px; */
 }
