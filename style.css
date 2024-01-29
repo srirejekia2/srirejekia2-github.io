@@ -2,15 +2,13 @@
 	margin:0;
 	/* box-sizing: border-box; */
 }
-html, body{
-	width: 100%;
-	height: 100%;
-	margin: 0px;
-	padding: 0px;
-	overflow-x: hidden;
+body {
 	background-color: #fff;
+	color: darkblue;
 	font-family: Calibri;
 	font-size: 12pt;
+	margin: 0 auto;
+	height:100%;
 }
 
 /* For mobile phones: */
@@ -42,9 +40,14 @@ html, body{
 
 .topnav{
 	overflow: hidden;
-	background-color: #333;
+	background-color: #3b582a;
 	text-align: center;
 	padding: 10px;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index:999;
+	/* height: 50px; */
 	/* margin-bottom: 10px; */
 }
 
@@ -56,7 +59,14 @@ html, body{
 	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
-	font-size: 17px;
+	font-size: 1.5em;
+	font-weight:700;
+	vertical-align: middle;
+}
+
+.topnav img{
+	height: 30px;
+	margin-right: 10px;
 }
 
 /* .topnav a:hover { */
@@ -119,7 +129,7 @@ img {vertical-align: middle;}
 .slideshow-container {
   max-width: 100%;
   position: relative;
-  margin: auto;
+  margin-top: 52px;
 }
 
 /* Caption text */
